@@ -1,16 +1,16 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
-import {CropperComponent} from "../cropper/cropper.component";
+import {CropperModule} from "../cropper/cropper.module";
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CropperComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+    CropperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

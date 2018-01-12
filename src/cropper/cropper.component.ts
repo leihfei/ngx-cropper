@@ -5,7 +5,6 @@ import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges
  * @function:
  */
 
-
 @Component({
   selector: 'app-lnlr-cropper',
   templateUrl: 'cropper.component.html',
@@ -54,7 +53,7 @@ export class CropperComponent implements OnInit, OnChanges {
    * @type {boolean}
    */
   @Input()
-  cropBoxResizable: boolean = false;
+  cropBoxResizable: boolean;
 
   /**
    * 定义裁剪的视图模式
@@ -67,7 +66,7 @@ export class CropperComponent implements OnInit, OnChanges {
    * @type {number}
    */
   @Input()
-  viewMode: number = 0;
+  viewMode: number;
 
   /**
    * 类型： String
@@ -79,7 +78,7 @@ export class CropperComponent implements OnInit, OnChanges {
    * @type {string}
    */
   @Input()
-  dragMode: string = 'crop';
+  dragMode: string;
 
   /**
    *  图片比例
