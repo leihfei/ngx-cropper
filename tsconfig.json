@@ -1,19 +1,61 @@
+/**
+ * Created by 雷洪飞 on 2018/1/15.
+ * @function:
+ */
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    // 基于哪个目录编译ts
+    "baseUrl": ".",
+    // 是否生成声明文件即*.d.ts文件，有了它才有TS的代码提示
+    "declaration": true,
+    // 用于支持TS装饰器如angular中的 @NgModule({}) 之类
     "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
+    // 用于支持TS装饰器如angular中的 @NgModule({}) 之类
+    "emitDecoratorMetadata": true,
+    // 模块化形式
+    "module": "es2015",
+    // 模块化形式
+    "moduleResolution": "node",
+    // 以哪个目录为根
+    "rootDir": ".",
+    // 支持编译的内置库
     "lib": [
-      "es2017",
+      "es2015",
       "dom"
-    ]
+    ],
+    // 是否跳过内置库检查
+    "skipDefaultLibCheck": true,
+    // 跳过库检查
+    "skipLibCheck": true,
+    // 编译目标版本
+    "target": "es5",
+    // 几个检查代码的规则
+    "suppressImplicitAnyIndexErrors": true,
+    // 几个检查代码的规则
+    "strictNullChecks": true,
+    // 几个检查代码的规则
+    "noImplicitAny": false,
+    // 是否生成 .js.map
+    "sourceMap": true,
+    // 移除注释
+    "removeComments": true,
+    // 几个检查代码的规则
+    "noFallthroughCasesInSwitch": true
+  },
+  "files": [
+    "index.ts"
+  ],
+  // 编译时排除以下内容
+  "exclude": [
+    "node_modules",
+    "*.d.ts",
+    "**/*.d.ts"
+  ],
+  "angularCompilerOptions": {
+    "skipTemplateCodegen": true,
+    "annotateForClosureCompiler": true,
+    "strictMetadataEmit": true,
+    "flatModuleOutFile": "ngx-cropper.js",
+    "flatModuleId": "ngx-cropper"
   }
 }

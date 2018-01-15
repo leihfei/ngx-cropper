@@ -1,6 +1,6 @@
 {
   "name": "ng4-image-cropper",
-  "version": "0.0.7",
+  "version": "0.1.2",
   "description": "利用cropper制作图片截图插件",
   "main": "dist/out-tsc/src/cropper.module.js.map",
   "repository": {
