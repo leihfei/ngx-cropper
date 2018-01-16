@@ -42,3 +42,14 @@ export class AppModule {
 在使用过过程中提供了点击勾勾之后会返回一个true,用于在使用时关闭对话框之类，并且数据会以base64的形式绑定到给定的数据中。
 
 
+# 属性简介
+  - cropBoxResizable  裁剪框大小调整
+  - viewMode 裁剪视图模式
+  - aspectRatio  图片裁剪比例  默认2/3
+  - responsive  根据页面调整大小
+  。。。。。。
+  
+  
+###### 无api
+
+
