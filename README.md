@@ -11,6 +11,32 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # 使用
  npm install --save lnlr-cropper@latest
 
+# 前提
+  1. 安装jQuery 并能使用$
+  2. 安装bootstrap
+  3. 安装font-awesome 图标库
+  4. 安装cropper 
+  
+  ```angular2html
+  npm install --save-dev jquery
+  npm install --save-dev bootstrap
+  npm install --save-dev font-awesome
+  npm install --save-dev croper
+  
+  引入js,css文件：
+  "styles": [
+          "styles.css",
+          "../node_modules/font-awesome/scss/font-awesome.scss",
+          "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "../node_modules/cropper/dist/cropper.css"
+        ],
+        "scripts": [
+          "../node_modules/jquery/dist/jquery.min.js",
+          "../node_modules/cropper/dist/cropper.min.js",
+          "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+        ],
+```
+
 在appModule中引入
 ```angular2html
 import {BrowserModule} from '@angular/platform-browser';
