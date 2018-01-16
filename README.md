@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 利用cropper 制作图片截图插件
 
 # 样式
-![example](https://github.com/leihfei/ngx-cropper/cropper-example.png
+![example](https://github.com/leihfei/ngx-cropper/cropper-example.png)
 
 # 使用
  npm install --save ngx-cropper@latest
