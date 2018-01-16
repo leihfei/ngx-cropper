@@ -9,13 +9,28 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ![example](https://github.com/leihfei/ngx-cropper/raw/master/cropper-example.png)
 
 # 使用
- npm install --save ngx-cropper@latest
+ npm install --save lnlr-cropper@latest
 
 在appModule中引入
 ```angular2html
-import {CropperModule} from 'ng4-image-cropper/index';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-CropperModule
+import {AppComponent} from './app.component';
+import {CropperModule} from 'lnlr-cropper/index';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    CropperModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
 ```
 
 在页面上使用

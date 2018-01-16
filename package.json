@@ -1,6 +1,6 @@
 {
-  "name": "ngx-cropper-image",
-  "version": "0.0.1",
+  "name": "lnlr-cropper",
+  "version": "0.0.7",
   "description": "利用cropper制作图片截图插件",
   "main": "dist/out-tsc/src/cropper.module.js.map",
   "repository": {

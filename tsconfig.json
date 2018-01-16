@@ -47,15 +47,13 @@
   ],
   // 编译时排除以下内容
   "exclude": [
-    "node_modules",
-    "*.d.ts",
-    "**/*.d.ts"
+    "node_modules"
   ],
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
-    "flatModuleOutFile": "ngx-cropper.js",
-    "flatModuleId": "ngx-cropper"
+    "flatModuleOutFile": "lnlr-cropper.js",
+    "flatModuleId": "lnlr-cropper"
   }
 }
